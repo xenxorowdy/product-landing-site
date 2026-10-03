@@ -1,0 +1,72 @@
+.languages {
+    padding: var(--s-9) 0;
+    overflow: hidden;
+}
+
+.head {
+    display: grid;
+    gap: var(--s-4);
+}
+
+.head h2 {
+    max-width: 11em;
+}
+
+.wall {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--s-2) var(--s-5);
+    margin-top: var(--s-8);
+}
+
+.wall li {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    gap: var(--s-1);
+    cursor: default;
+}
+
+.native {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6.2vw, 6.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: var(--fg-quiet);
+    transition: color 250ms var(--ease);
+}
+
+.name {
+    font-size: var(--t-label);
+    font-stretch: 125%;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fg-mute);
+    opacity: 0;
+    transform: translateY(-4px);
+    transition:
+        opacity 250ms var(--ease),
+        transform 250ms var(--ease);
+}
+
+.wall li:hover .native {
+    color: var(--accent-display);
+}
+
+.wall li:hover .name {
+    opacity: 1;
+    transform: none;
+}
+
+@media (hover: none) {
+    .native {
+        color: var(--fg-dim);
+    }
+
+    .name {
+        opacity: 1;
+        transform: none;
+    }
+}

@@ -1,0 +1,27 @@
+.closing {
+    padding: var(--s-10) 0 var(--s-9);
+}
+
+.title {
+    max-width: 9.5em;
+    font-size: clamp(3.25rem, 9vw, 9.5rem);
+}
+
+.title span {
+    display: block;
+}
+
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s-4);
+    margin-top: var(--s-6);
+}
+
+.note {
+    font-size: var(--t-label);
+    font-stretch: 112%;
+    letter-spacing: 0.04em;
+    color: var(--fg-mute);
+}

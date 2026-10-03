@@ -21,5 +21,9 @@ Claude Code picks it up automatically; ask for a landing page, marketing site or
 - `scripts/accent.mjs`, `scripts/capture.cjs`: contrast derivation and screenshots
 - `references/`: design system, section patterns, motion and accessibility, copy and facts, verification
 
-Derived from the Kesami marketing site. The vendored Instrument Serif font is under the SIL Open Font License
+Derived from the Kesami marketing site.
+
+## License
+
+MIT, see `LICENSE`. The vendored Instrument Serif font keeps its own SIL Open Font License
 (`assets/scaffold/public/fonts/Instrument-Serif-OFL.txt`).
